@@ -36,12 +36,35 @@ NASA Postdoctoral Program Fellow at NASA Marshall Space Flight Center,
 Huntsville, AL.
 
 
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 <div class="row">
   <div class="column" style="background-color:#aaa;">
     <h2>Column 1</h2>
     <p>Email</p>
     <p>Twitter</p>
-    <p>Email</p>    
+    <p>Email</p>
   </div>
   <div class="column" style="background-color:#bbb;">
     <h2>Column 2</h2>
