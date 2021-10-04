@@ -24,50 +24,6 @@ div {
 
 
 <!-- Background image -->
-<div class='some-page-wrapper'>
-</div>
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-.some-page-wrapper {
-  margin: 15px;
-  background-color: red;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.blue-column {
-  background-color: blue;
-  height: 100px;
-}
-
-.green-column {
-  background-color: green;
-  height: 100px;
-}
-
 
        <div class="container">
             <div class="container">
@@ -84,37 +40,35 @@ My name is Subramania Athiray Panchapakesan (I go by Athiray). I’m currently a
 NASA Postdoctoral Program Fellow at NASA Marshall Space Flight Center,
 Huntsville, AL.
 
-
-
-<div class='some-page-wrapper'>
-  <div class='row'>
-    <div class='double-column'>
-      <div class='blue-column'>
-        Some Text in row 3 double column 1
-      </div>
-    </div>
-    <div class='column'>
-      something in row 3 column 2
-    </div>
-  </div>
-</div>
-
-
-
-
-
 <style>
     {
         box-sizing: border-box;
     }
-    /* Set additional styling options for the columns*/
+    /* Set additional styling options for the columns */
     .column {
+    float: left;
+    }
+
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 80%;
+    }
+
+    .middle {
+    width: 5%;
+    }
+    
+    .right {
+    width: 15%;
+    }
+    
+   /* Set additional styling options for the columns*/
+   /*.column {
     float: left;
     column-width: 70%;
     float: right;
     column-width: 30%;
-
-    }
+    } */
 
     .row:after {
     content: "";
